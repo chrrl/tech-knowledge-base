@@ -18,9 +18,7 @@
 | Function | Command | Type |
 | --------- | --------- | --------- |
 | 行コメントアウト | Ctrl + K | Default |
-| 行コメントアウト解除 | Ctrl + K | Default |
-
-
+| 行コメントアウト解除 | Ctrl + Shift + K | Default |
 
 
 ## 検索
@@ -29,6 +27,8 @@
 | --------- | --------- | --------- |
 | インクリメンタルサーチ | Ctrl + Alt + Shift + I  | Default |
 | 次/前の検索へ移動 | F3 / Shift + F3 | Default |
+
+## フォールド
 
 
 
