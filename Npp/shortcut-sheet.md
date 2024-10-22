@@ -25,7 +25,7 @@
 
 | Function | Command | Type |
 | --------- | --------- | --------- |
-| インクリメンタルサーチ | Ctrl + Alt + Shift + I  | Default |
+| 逐次検索 | Ctrl + Alt + I  | Default |
 | 次/前の検索へ移動 | F3 / Shift + F3 | Default |
 | カーソルがある単語を検索 | Ctrl + F3 | Default |
 
