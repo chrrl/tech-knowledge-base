@@ -1,1 +1,621 @@
-# Just Temporary File Creation
+
+body {
+  font-family: 'Meiryo UI', Helvetica, arial, sans-serif;
+  /* font-family: Helvetica, arial, sans-serif; */
+  /* font-family: 'Courier New', sans-serif; */
+  font-size: 14px;
+  line-height: 1.4;
+  padding-top   : 10px;
+  padding-bottom: 10px;
+  padding       : 30px;
+  /*↓プレビュー全体の背景色*/
+  background-color: #0C1021 /* #3F3F3F Default*/;
+  /*↓プレビュー全体の文字色*/
+  color: #F8F8F8 /* #CCCCCC */  ; 
+}
+
+body &gt; *:first-child {
+  margin-top: 0 !important;
+}
+
+body &gt; *:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* リンクのスタイル */
+a { 
+/*  color: #BE7C3B; */
+  color: #8DA6CE;
+  text-decoration: none;
+}
+
+a.absent {
+  color: #33FFFF;
+}
+
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+/*全見出しレベル共通の設定*/
+h1, h2, h3, h4, h5, h6 {
+/* margin: 20px 0 10px; */
+/* padding: 0; */
+   padding-left: 0px;
+   font-weight: bold;
+   -webkit-font-smoothing: antialiased;
+   cursor: text;
+   position: relative;
+}
+
+h2:first-child, h1:first-child, h1:first-child + h2, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  text-decoration: none;
+}
+
+h1 tt, h1 code {
+  font-size: inherit;
+  font-family: "Ricty Diminished", Consolas , monospace;
+}
+
+h2 tt, h2 code {
+  font-size: inherit;
+  font-family: "Ricty Diminished", Consolas , monospace;
+}
+
+h3 tt, h3 code {
+  font-size: inherit;
+  font-family: "Ricty Diminished", Consolas , monospace;
+}
+
+h4 tt, h4 code {
+  font-size: inherit;
+  font-family: "Ricty Diminished", Consolas , monospace;
+}
+
+h5 tt, h5 code {
+  font-size: inherit;
+  font-family: "Ricty Diminished", Consolas , monospace;
+}
+
+h6 tt, h6 code {
+  font-size: inherit;
+  font-family: "Ricty Diminished", Consolas , monospace;
+}
+
+h1 {
+  margin-top    : 24px;
+  margin-bottom : 12px;
+  font-size: 28px;
+  color: white;
+  /* color: #FBDE2D; /* 見出しを黄色で強調 */ */
+}
+
+h2 {
+  margin-top    : 24px;
+  margin-bottom : 12px;
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: white;
+}
+
+h3 {
+  margin-top    : 12px; /* 見出し3,4 に移行する前の上部マージンの調整 */
+  margin-bottom : 8px;
+  font-size: 18px;
+  color: white;
+}
+
+h4 {
+  margin-top    : 12px; /* 見出し3,4 に移行する前の上部マージンの調整 */
+  margin-bottom : 8px;
+  font-size: 16px;
+  color: white;
+}
+
+h5 {
+  margin-top    : 12px;
+  margin-bottom : 8px;
+  font-size: 14px;
+  color: white;
+}
+
+h6 {
+  margin-top    : 12px;
+  margin-bottom : 8px;
+  color: #888888;
+  font-size: 14px;
+}
+
+p { /* 段落を表す要素 */
+  margin-top:    5px; /* 恐らく意味を持たない */
+  margin-bottom: 8px; /* よくわからないが順序有りリスト > Lv2順序無しリストだけ影響を受ける*/
+}
+
+blockquote { /* 長い引用文を表すHTML要素 */
+  margin-top:    5px;
+  margin-bottom: 5px;
+}
+
+body &gt; h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body &gt; h1:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body &gt; h1:first-child + h2 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+body &gt; h3:first-child, body &gt; h4:first-child, body &gt; h5:first-child, body &gt; h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0;
+}
+
+
+/* リストアイテム（li）のスタイル */
+li {
+  margin-bottom: 4px;  /* 同じレベルのリスト間の間隔の調整 */
+  line-height: 1.2 ;   /* リストの種類やレベル関係なく間隔を調整 */
+}
+
+/* 順序なしリスト（ul）と順序付きリスト（ol）の共通スタイル */
+ul, ol {
+  padding-left: 20px; /* リストの左側のパディングを調整 */
+  line-height: 1.2 ;   /* リストの種類やレベル関係なく間隔を調整 */
+  margin-top:   5px;  /* リストの上下のマージンを設定 */
+  
+}
+
+
+/* Lv2リストアイテムの上側マージンを調整 */
+li > ul:first-child {
+  margin-top:    3px; /* 順序無しリストLv2とLv1リストとの間隔を調整 */
+}
+li > ol:first-child {
+  margin-top:    3px; /* 順序有りリストLv2とLv1リストとの間隔を調整 */
+}
+
+
+/* Lv2リストアイテムの最下部マージンを調整 */
+   li > ul:last-child, li > ol:last-child {
+     margin-bottom: 8px;
+   }
+
+ul :first-child, ol :first-child {
+  margin-top: 4px;
+}
+
+ul :last-child, ol :last-child {
+  /* margin-bottom: 0; */ /*リスト最下部の行間隔を調整*/
+}
+
+/* オプション：リストマーカー（箇条書きの記号）のスタイル調整 */
+ul {
+  list-style-type: disc; /* 円形のマーカー */
+}
+
+ul ul {
+  list-style-type: circle; /* 入れ子の第1レベルは円形の白抜きマーカー */
+}
+
+ul ul ul {
+  list-style-type: square; /* 入れ子の第2レベルは四角形のマーカー */
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt &gt; :first-child {
+  margin-top: 0;
+}
+
+dl dt &gt; :last-child {
+  margin-bottom: 0;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd &gt; :first-child {
+  margin-top: 0;
+}
+
+dl dd &gt; :last-child {
+  margin-bottom: 0;
+}
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #888888;
+}
+
+blockquote &gt; :first-child {
+  margin-top: 0;
+}
+
+blockquote &gt; :last-child {
+  margin-bottom: 0;
+}
+
+
+table {
+  display: block;
+  max-width: 100%;
+  /* width: 150%; */
+  border-collapse: collapse; /*セルの境界線を結合*/
+  margin: 10px 0;
+  font-size: 14px; 
+  white-space: nowrap; /* テキストの折り返しを防ぐ */
+  overflow: auto;
+  /* overflow: scroll; */
+}
+
+/* テーブルヘッダー（th）のスタイリング */
+table th {
+  background-color: #1F1F1F;
+  font-weight: bold;
+  text-align: left;
+  padding: 8px 12px; /* ヘッダーのパディングを少し狭めました */
+  border: 1px solid #3F3F3F;
+  line-height: 1.1; /* ヘッダー内の行間を調整 */
+}
+
+/* テーブルセル（td）のスタイリング */
+table td {
+  padding: 6px 12px; /* セルの垂直パディングを6pxに減らしました */
+  border: 1px solid #3F3F3F;
+  line-height: 1.0;   /* セル内の行間を狭く設定 */
+  vertical-align: top;/* セル内の垂直方向の配置を上揃えに */
+}
+
+
+/* 偶数行の背景色 */
+table tr:nth-child(even) {
+  background-color: #0C1021;
+}
+
+/* 最初の列のスタイル（オプション） */
+table th:first-child,
+table td:first-child {
+  border-left: 3px solid #BE7C3B;
+}
+
+
+/* テーブルキャプションのスタイル（オプション） */
+table caption {
+  caption-side: top;
+  text-align: left;
+  padding: 10px 0;
+  font-weight: bold;
+  color: #BE7C3B;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+span.frame {
+  display: block;
+  overflow: hidden;
+}
+
+span.frame &gt; span {
+  border: 1px solid #dddddd;
+  display: block;
+  float: left;
+  overflow: hidden;
+  margin: 13px 0 0;
+  padding: 7px;
+  width: auto;
+}
+
+span.frame span img {
+  display: block;
+  float: left;
+}
+
+span.frame span span {
+  clear: both;
+  color: #CCCCCC;
+  display: block;
+  padding: 5px 0 0;
+}
+
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+span.align-center &gt; span {
+  display: block;
+  overflow: hidden;
+  margin: 13px auto 0;
+  text-align: center;
+}
+
+span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+span.align-right &gt; span {
+  display: block;
+  overflow: hidden;
+  margin: 13px 0 0;
+  text-align: right;
+}
+
+span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left;
+}
+
+span.float-left span {
+  margin: 13px 0 0;
+}
+
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right;
+}
+
+span.float-right &gt; span {
+  display: block;
+  overflow: hidden;
+  margin: 13px auto 0;
+  text-align: right;
+}
+
+code, tt {
+  font-family: "Ricty Diminished", Consolas , monospace;
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #333;
+  border-radius: 3px;
+  
+}
+
+.highlight pre {
+  font-family: "Ricty Diminished", Consolas , monospace;
+  background-color: #333;
+  /* background-color: #253B76; */
+  border: 1px solid #eaeaea;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;   
+}
+
+pre {
+  font-family: Consolas , monospace;
+  background-color: #1E1E1E;
+  /* background-color: #253B76; */
+  color: #F8F8F8;
+  border: 1px solid #eaeaea;
+  font-size: 13px;
+  /* line-height: 19px; */
+  line-height: 1.2;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt { /*整形済テキスト(コードブロック等)を表す要素*/
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  paddigng:0;
+  white-space: pre;
+  font-family: Consolas, monospace;
+  border-radius: 5px;
+  overflow-x:    auto;
+}
+
+/* Syntax Highlighting */
+
+.plainText {
+ /* background-color: #FFFFFF; */
+ background-color: #1E1E1E;
+ color: #000000;
+}
+.htmlServerSideScript {
+ background-color: #FFFF00;
+}
+.htmlComment {
+ color: #307F30;
+}
+.htmlTagDelimiter {
+ color: #7F7FFF;
+}
+.htmlElementName {
+ color: #CC6C4E;
+}
+.htmlAttributeName {
+ color: #FF0000;
+}
+.htmlAttributeValue {
+ color: #7F7FFF;
+}
+.htmlOperator {
+ color: #7F7FFF;
+}
+.comment {
+ color: #307F30;
+}
+.xmlDocTag {
+ color: #808080;
+}
+.xmlDocComment {
+ color: #307F30;
+}
+.string {
+ color: #CC6C4E;
+}
+.stringCSharpVerbatim {
+ color: #CC6C4E;
+}
+.keyword {
+ color: #7F7FFF;
+}
+.preprocessorKeyword {
+ color: #7F7FFF;
+}
+.htmlEntity {
+ color: #FF0000;
+}
+.xmlAttribute {
+ color: #FF0000;
+}
+.xmlAttributeQuotes {
+ color: #000000;
+}
+.xmlAttributeValue {
+ color: #7F7FFF;
+}
+.xmlCDataSection {
+ color: #808080;
+}
+.xmlComment {
+ color: #307F30;
+}
+.xmlDelimiter {
+ color: #7F7FFF;
+}
+.xmlName {
+ color: #CC6C4E;
+}
+.className {
+ color: #48D1CC;
+}
+.cssSelector {
+ color: #CC6C4E;
+}
+.cssPropertyName {
+ color: #FF0000;
+}
+.cssPropertyValue {
+ color: #7F7FFF;
+}
+.sqlSystemFunction {
+ color: #FF00FF;
+}
+.powershellAttribute {
+ color: #B0E0E6;
+}
+.powershellOperator {
+ color: #808080;
+}
+.powershellType {
+ color: #008080;
+}
+.powershellVariable {
+ color: #FF4500;
+}
+.type {
+ color: #008080;
+}
+.typeVariable {
+ color: #008080;
+ font-style: italic;
+}
+.namespace {
+ color: #000080;
+}
+.constructor {
+ color: #800080;
+}
+.predefined {
+ color: #000080;
+}
+.pseudoKeyword {
+ color: #000080;
+}
+.stringEscape {
+ color: #808080;
+}
+.controlKeyword {
+ color: #7F7FFF;
+}
+.number {
+}
+.operator {
+}
+.delimiter {
+}
+.markdownHeader {
+ font-weight: bold;
+}
+.markdownCode {
+ color: #008080;
+}
+.markdownListItem {
+ font-weight: bold;
+}
+.italic {
+ font-style: italic;
+}
+.bold {
+ font-weight: bold;
+}
