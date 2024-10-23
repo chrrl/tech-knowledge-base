@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+        }
+        .color-section {
+            margin-bottom: 30px;
+        }
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .color-item {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            overflow: hidden;
+            font-size: 12px;
+        }
+        .color-preview {
+            height: 60px;
+            width: 100%;
+        }
+        .color-info {
+            padding: 8px;
+            background: #f5f5f5;
+        }
+        .color-name {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        .color-code {
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .theme-preview {
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+        .color-tag {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin: 2px;
+            color: white;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="color-section">
+        <h2>基本カラーパレット</h2>
+        <div class="color-grid">
+            <!-- 赤系 -->
+            <div class="color-item">
+                <div class="color-preview" style="background: #FF0000;"></div>
+                <div class="color-info">
+                    <div class="color-name">Red</div>
+                    <div class="color-code">#FF0000</div>
+                </div>
+            </div>
+            <div class="color-item">
+                <div class="color-preview" style="background: #DC143C;"></div>
+                <div class="color-info">
+                    <div class="color-name">Crimson</div>
+                    <div class="color-code">#DC143C</div>
+                </div>
+            </div>
+            <!-- 青系 -->
+            <div class="color-item">
+                <div class="color-preview" style="background: #0000FF;"></div>
+                <div class="color-info">
+                    <div class="color-name">Blue</div>
+                    <div class="color-code">#0000FF</div>
+                </div>
+            </div>
+            <div class="color-item">
+                <div class="color-preview" style="background: #4169E1;"></div>
+                <div class="color-info">
+                    <div class="color-name">RoyalBlue</div>
+                    <div class="color-code">#4169E1</div>
+                </div>
+            </div>
+            <!-- 緑系 -->
+            <div class="color-item">
+                <div class="color-preview" style="background: #008000;"></div>
+                <div class="color-info">
+                    <div class="color-name">Green</div>
+                    <div class="color-code">#008000</div>
+                </div>
+            </div>
+            <div class="color-item">
+                <div class="color-preview" style="background: #32CD32;"></div>
+                <div class="color-info">
+                    <div class="color-name">LimeGreen</div>
+                    <div class="color-code">#32CD32</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="color-section">
+        <h2>ダークテーマ用カラー</h2>
+        <div class="color-grid">
+            <div class="color-item">
+                <div class="color-preview" style="background: #1E1E1E;"></div>
+                <div class="color-info">
+                    <div class="color-name">VSCode Dark</div>
+                    <div class="color-code">#1E1E1E</div>
+                </div>
+            </div>
+            <div class="color-item">
+                <div class="color-preview" style="background: #282C34;"></div>
+                <div class="color-info">
+                    <div class="color-name">One Dark</div>
+                    <div class="color-code">#282C34</div>
+                </div>
+            </div>
+            <div class="color-item">
+                <div class="color-preview" style="background: #2E3440;"></div>
+                <div class="color-info">
+                    <div class="color-name">Nord Dark</div>
+                    <div class="color-code">#2E3440</div>
+                </div>
+            </div>
+            <div class="color-item">
+                <div class="color-preview" style="background: #002B36;"></div>
+                <div class="color-info">
+                    <div class="color-name">Solarized Dark</div>
+                    <div class="color-code">#002B36</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="color-section">
+        <h2>エディタテーマ - Molokai</h2>
+        <div class="theme-preview" style="background: #1B1D1E; color: #F8F8F2;">
+            <div class="color-tag" style="background: #F92672;">Keywords (#F92672)</div>
+            <div class="color-tag" style="background: #66D9EF;">Functions (#66D9EF)</div>
+            <div class="color-tag" style="background: #A6E22E;">Strings (#A6E22E)</div>
+            <div class="color-tag" style="background: #FD971F;">Variables (#FD971F)</div>
+            <div class="color-tag" style="background: #AE81FF;">Numbers (#AE81FF)</div>
+            <br>
+            Background: #1B1D1E<br>
+            Foreground: #F8F8F2
+        </div>
+    </div>
+
+    <div class="color-section">
+        <h2>エディタテーマ - Blackboard</h2>
+        <div class="theme-preview" style="background: #0C1021; color: #F8F8F8;">
+            <div class="color-tag" style="background: #FBDE2D;">Keywords (#FBDE2D)</div>
+            <div class="color-tag" style="background: #FF6400;">Functions (#FF6400)</div>
+            <div class="color-tag" style="background: #61CE3C;">Strings (#61CE3C)</div>
+            <div class="color-tag" style="background: #8DA6CE;">Variables (#8DA6CE)</div>
+            <div class="color-tag" style="background: #D8FA3C;">Numbers (#D8FA3C)</div>
+            <br>
+            Background: #0C1021<br>
+            Foreground: #F8F8F8
+        </div>
+    </div>
+
+    <div class="color-section">
+        <h2>グレースケールと透明度</h2>
+        <div class="color-grid">
+            <div class="color-item">
+                <div class="color-preview" style="background: rgba(0,0,0,0.1);"></div>
+                <div class="color-info">
+                    <div class="color-name">10% Black</div>
+                    <div class="color-code">rgba(0,0,0,0.1)</div>
+                </div>
+            </div>
+            <div class="color-item">
+                <div class="color-preview" style="background: rgba(0,0,0,0.3);"></div>
+                <div class="color-info">
+                    <div class="color-name">30% Black</div>
+                    <div class="color-code">rgba(0,0,0,0.3)</div>
+                </div>
+            </div>
+            <div class="color-item">
+                <div class="color-preview" style="background: rgba(0,0,0,0.5);"></div>
+                <div class="color-info">
+                    <div class="color-name">50% Black</div>
+                    <div class="color-code">rgba(0,0,0,0.5)</div>
+                </div>
+            </div>
+            <div class="color-item">
+                <div class="color-preview" style="background: rgba(0,0,0,0.8);"></div>
+                <div class="color-info">
+                    <div class="color-name">80% Black</div>
+                    <div class="color-code">rgba(0,0,0,0.8)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
