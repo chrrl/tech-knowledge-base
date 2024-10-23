@@ -1,48 +1,71 @@
-# Notepad++ ShortCut Sheet
+# Notepad++ 基本ショートカットキー チートシート
 
-## BASIC EDIT
+## ファイル操作
+- 新規作成: `Ctrl + N`
+- 開く: `Ctrl + O`
+- 保存: `Ctrl + S`
+- 名前を付けて保存: `Ctrl + Alt + S`
+- 閉じる: `Ctrl + W`
+- すべて閉じる: `Ctrl + Shift + W`
+- 印刷: `Ctrl + P`
 
-| Function | Command | Type |
-| --------- | --------- | --------- |
-| ファイルの先頭へ移動 | Ctrl + Home | Default |
-| ファイルの末尾へ移動 | Ctrl + End | Default |
-| 行複製 | Ctrl + D | Default |
-| 行削除 | Ctrl + X | Default |
-| 行先頭へ移動 | Home | Default |
-| 行末尾へ移動 | End | Default |
-| 行上/下移動 | Ctrl + Shift + Up/Down | Default |
-| 指定行へ移動 | Ctrl + G | Default |
+## 編集操作
+- 元に戻す: `Ctrl + Z`
+- やり直し: `Ctrl + Y`
+- 切り取り: `Ctrl + X`
+- コピー: `Ctrl + C`
+- 貼り付け: `Ctrl + V`
+- すべて選択: `Ctrl + A`
+- 行の削除: `Ctrl + L`
+- 行の複製: `Ctrl + D`
 
+## 検索と置換
+- 検索: `Ctrl + F`
+- インクリメンタルサーチ（前方）: `Ctrl + Alt + I`
+- インクリメンタルサーチ（後方）: `Ctrl + Alt + Shift + I`
+- 次を検索: `F3`
+- 前を検索: `Shift + F3`
+- 置換: `Ctrl + H`
+- 指定行へ移動: `Ctrl + G`
 
-## コメントアウト
-| Function | Command | Type |
-| --------- | --------- | --------- |
-| 行コメントアウト | Ctrl + K | Default |
-| 行コメントアウト解除 | Ctrl + Shift + K | Default |
+## テキスト編集
+- コメントアウト/解除: `Ctrl + K`
+- 大文字に変換: `Ctrl + Shift + U`
+- 小文字に変換: `Ctrl + U`
+- インデント追加: `Tab`
+- インデント削除: `Shift + Tab`
+- 折り返し表示の切替: `Alt + Z`
 
+## フォールド操作
+- 現在の階層をフォールド: `Alt + 0`
+- レベル1をフォールド: `Alt + 1`
+- レベル2をフォールド: `Alt + 2`
+- レベル3をフォールド: `Alt + 3`
+- レベル4をフォールド: `Alt + 4`
+- レベル5をフォールド: `Alt + 5`
+- レベル6をフォールド: `Alt + 6`
+- レベル7をフォールド: `Alt + 7`
+- レベル8をフォールド: `Alt + 8`
+- すべてをフォールド: `Alt + Shift + 0`
+- すべてを展開: `Alt + Shift + 1`
+- 現在の行をフォールド/展開: `Ctrl + Alt + F`
 
-## 検索
+## 表示
+- ズームイン: `Ctrl + マウスホイール上` または `Ctrl + +`
+- ズームアウト: `Ctrl + マウスホイール下` または `Ctrl + -`
+- ズームリセット: `Ctrl + 0`
+- 全画面表示の切替: `F11`
+- ドキュメントの切り替え: `Ctrl + Tab`
 
-| Function | Command | Type |
-| --------- | --------- | --------- |
-| 逐次検索 | Ctrl + Alt + I  | Default |
-| 次/前の検索へ移動 | F3 / Shift + F3 | Default |
-| カーソルがある単語を検索 | Ctrl + F3 | Default |
+## マルチカーソル・選択
+- マルチカーソル（上方向に追加）: `Ctrl + Alt + ↑`
+- マルチカーソル（下方向に追加）: `Ctrl + Alt + ↓`
+- 列選択モード: `Alt + マウスドラッグ`
+- 単語選択: `Ctrl + ダブルクリック`
 
-### フォールド(折りたたみ)
-| 操作 | ショートカット | Type
-|------|----------------|-------|
-| カーソル行のフォールドを切り替え | F12 | Default |
-| 全てのフォールドを折りたたむ     | Alt  + 0 |     Default |             
-| 全てのフォールドを展開           | Alt  + Shift + 0 | Default |
-| カーソル位置のフォールドを展開   | Ctrl + Alt + Shift + F | Default |
-
-
-## 個人設定(マクロ含む)
-
-| 操作 | ショートカット | Type |
-|------|----------------|----|
-| カーソル位置の単語削除 | Shift + Space | マクロ |
-
-
-
+## その他
+- ファイル内容の比較: `Alt + D`
+- マクロ記録開始/停止: `Ctrl + Shift + R`
+- マクロ再生: `Ctrl + Shift + P`
+- ブックマークの設定/解除: `Ctrl + F2`
+- 次のブックマークへ移動: `F2`
