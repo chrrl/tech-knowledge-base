@@ -3,12 +3,11 @@
 about tech-knowledge-base
 
 ## ディレクトリ構造
-
 ```tree
 .
 ├── [📁 CSS/](./CSS)
 │   ├── [📄 blackboard-style.css](./CSS/blackboard-style.css)
-│   ├── [📄 intex.html](./CSS/intex.html)
+│   ├── [📄 index.html](./CSS/index.html)
 ├── [📁 Excel/](./Excel)
 ├── [📁 Word/](./Word)
 ├── [📁 PowerPoint/](./PowerPoint)
