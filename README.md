@@ -4,7 +4,6 @@ about tech-knowledge-base
 
 ## ディレクトリ構造
 
-```tree
 .
 ├── [📁 CSS/](./CSS)
 │   ├── [📄 blackboard-style.css](./CSS/blackboard-style.css)
