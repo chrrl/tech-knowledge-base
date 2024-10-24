@@ -9,5 +9,6 @@ about tech-knowledge-base
 * [Word](./Word)
 * [Npp](./Npp)
 * [Markdown](./Markdown)
-* [HTML Color Refference](./CSS)
+* [CSS](./CSS)<br>∟[HTML Color Refference](https://chrrl.github.io/tech-knowledge-base/CSS/)
+
 
