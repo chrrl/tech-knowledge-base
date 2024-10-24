@@ -7,6 +7,7 @@ about tech-knowledge-base
 * [Excel](./Excel)
 * [PowerPoint](./PowerPoint)
 * [Word](./Word)
+* [Linux/Unix](./Linux)
 * [Npp](./Npp)
 * [Markdown](./Markdown)
 * [CSS](./CSS)<br>∟[HTML Color Refference](https://chrrl.github.io/tech-knowledge-base/CSS/)
